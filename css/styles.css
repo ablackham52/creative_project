@@ -4,11 +4,165 @@
   box-sizing: border-box;
 }
 
-/* Menu */
-.bg-dark {
-  background-color: #000000 !important;
+
+.main {
+    height: 100%;
+    background-color: black;
+    padding-bottom: 60px;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #000000;
+.info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px 50px;
+
+}
+
+.intro {
+  display: flex;
+  align-items: left;
+  flex-flow: column;
+  width: 30%;
+  color: white;
+  text-align: left;
+    padding-bottom: 100px;
+}
+
+h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.intro h1 {
+  padding-top: 30px;
+  font-size: 48px;
+}
+
+.intro p {
+  padding-top: 40px;
+  font-size: 26px;
+}
+
+ul {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.about:link, .about:visited {
+  position: relative;
+  top: 50px;
+  color: black;
+  background-color: #1ecc4f;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 18px;
+}
+
+.about:hover,
+.about:visited:hover {
+  color: #FFF;
+  background-color: #1ecc4f;  /* Light blue */
+}
+
+.about:active,
+.about:visited:active {
+  color: #FFF;
+  background-color: #1ecc4f;  /* Blue */
+}
+
+.image {
+  border: 50px 50px;
+  width: 50%;
+  height: auto;
+}
+
+.image img{
+  width: 100%;
+  height: auto;
+}
+
+.footer{
+height: 100px;
+background-color: #343A40;
+display: flex;
+justify-content: flex-start;
+width: 100%;
+}
+
+.github:link, .github:visited {
+  color: white;
+  background-color: #343A40;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 10px
+}
+
+.github:hover,
+.github:visited:hover {
+  color: #FFF;
+  background-color: #343A40;  /* Light blue */
+}
+
+.github:active,
+.github:visited:active {
+  color: #FFF;
+  background-color: #343A40;  /* Blue */
+}
+
+
+.reviews{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+.review {
+
+  width: 50%;
+  margin: 20px 1.15%;
+  height: auto;
+  background-color: #343A40;    /* Medium blue */
+}
+
+.avatar {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+  border-radius: 40px;
+  background-color: #D6E9FE;
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
+}
+
+
+.username {
+  margin-top: 30px;
+}
+
+.comment {
+  margin: 10px;
+  overflow: hidden;  /* This is important */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 1200px) {
+  .image {
+    width: 100%;
+  }
+
+  .intro {
+    width:75%;
+  }
 }
